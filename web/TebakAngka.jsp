@@ -23,5 +23,5 @@
         <% }else { %>
         <p>Maaf, tebakannya salah! <a href="tebak-angka.html"> Coba lagi</a></p>
         <% } %>
-    </body>
+    </body> 
 </html>
