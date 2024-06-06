@@ -22,12 +22,12 @@
             </label>
             <label>Office
                 <input type ="text" name="Office">
-            </label>
+             </label>
             <label>Age
                 <input type ="text" name="Age">
             </label>
             <label>Start Date
-                <input type ="date" name="Startdate">
+                <input type ="date" name="Start_date">
             </label>
             <label>salary
                 <input type ="text" name="Salary">
@@ -39,12 +39,12 @@
     <%@page import = "javax.swing.*" %>
     
     <%
-        String name = request.getParameter("Name");
-        String position = request.getParameter("Position");
-        String office = request.getParameter("Office");
-        String age = request.getParameter("Age");
-        String startdate = request.getParameter("Startdate");
-        String salary = request.getParameter("Salary");
+        String Name = request.getParameter("Name");
+        String Position = request.getParameter("Position");
+        String Office = request.getParameter("Office");
+        String Age = request.getParameter("Age");
+        String Start_date = request.getParameter("Start_date");
+        String Salary = request.getParameter("Salary");
         
         String connectionURL = "jdbc:mysql://localhost/29_db";
         Connection connection = null;
@@ -52,37 +52,30 @@
         String passwordDB = "";
         PreparedStatement statement = null;
         Class.forName("com.mysql.jdbc.Driver");
-        int updateQuery = 0;
+        int updatedQuery = 0;
         
-        if (name != null && position != null) {
+        if (Name != null && Position != null) {
             try {
                 connection = DriverManager.getConnection(connectionURL, usernameDB, passwordDB);
-                String query = "INSERT INTO employees values (?,?,?,?,?,?,?)";
+                String query = "INSERT INTO employees (Name, Position, Office, Age, Start_date, Salary) values (?,?,?,?,?,?)";
                 statement = connection.prepareStatement(query);
 
-                int randomID = (int) Math.random() * 99 + 1;
+                //int randomID = (int) Math.random() * 99 + 1; tidak jadi kare pakai auto increment di db
 
-                statement.setInt(1, randomID);
-                statement.setString(2, name);
-                statement.setString(3, position);
-                statement.setString(4, office);
-                statement.setString(5, age);
-                statement.setString(6, startdate);
-                statement.setString(7, salary);
+                //statement.setInt(1, randomID);
+                statement.setString(1, Name);
+                statement.setString(2, Position);
+                statement.setString(3, Office);
+                statement.setString(4, Age);
+                statement.setString(5, Start_date);
+                statement.setString(6, Salary);
 
-                updateQuery = statement.executeUpdate();
-
-                if(updateQuery != 0) { response.sendRedirect("ReadEmployees.jsp");}
-            
-            }catch(Exception e) {
-                response.sendRedirect("ReadEmployees.jsp");
-            } finally { 
-               if(statement != null) {
-                        statement.close();
-                    }
-                    if(connection != null) {
-                        connection.close();
-                    }
-            }
+        updatedQuery = statement.executeUpdate();
+        
+        if(updatedQuery != 0) { response.sendRedirect("ReadEmployees.jsp"); }
+        } catch(Exception e) {
+        response.sendRedirect("ReadEmployees.jsp");
+    } finally { statement.close(); connection.close(); }
         }
-     %>
+    %>
+    </html>

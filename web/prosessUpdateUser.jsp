@@ -16,8 +16,8 @@
         
 <%
 String ID = request.getParameter("ID");
-String userName = request.getParameter("userName");
-String passWord = request.getParameter("passWord");
+String userName = request.getParameter("username");
+String passWord = request.getParameter("password");
 
 if(ID != null) {
 try {
@@ -29,8 +29,8 @@ try {
  statement.setString(2, userName);
  statement.setString(3, passWord);
  int i = statement.executeUpdate();
- response.sendRedirect("ReadUser.jsp");
- }catch(Exception e) { response.sendRedirect("ReadUser.jsp"); }
+ response.sendRedirect("ReadUsers.jsp");
+ }catch(Exception e) { response.sendRedirect("ReadUsers.jsp"); }
     }
  %>
     </body>

@@ -29,9 +29,9 @@
              while(resultSet.next()) {
              
              %>
-                <form action="ProcessUpdateUser.jsp" method="post">
+                <form action="prosessUpdateUser.jsp" method="post">
                     <input type="hidden"
-                           name="id"
+                           name="ID"
                            value="<%out.println(resultSet.getString("ID"));%>">
                     <label>Username
                         <input type ="text" 

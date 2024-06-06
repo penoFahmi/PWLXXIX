@@ -44,8 +44,7 @@
                         <th>Age</th>
                         <th>Start Date</th>
                         <th>Salary</th>
-                        <th>Edit</th>
-                    </tr>
+                        <th>Edit</t
                 </thead>
                 <tbody>
                     <%
