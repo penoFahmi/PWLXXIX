@@ -1,7 +1,7 @@
 <%-- 
     Document   : ReadEmployees
     Created on : 6 May 2024, 17.59.54
-    Author     : peno
+    Author     : Peno
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -44,12 +44,12 @@
                         <th>Age</th>
                         <th>Start Date</th>
                         <th>Salary</th>
-                        <th>Edit</t
+                        <th>Actions</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <%
                     while(resultSet.next()) {
-                        String employeeId = resultSet.getString("id");
                     %>
                     <tr>
                         <td><%= resultSet.getString("Name") %></td>
@@ -59,14 +59,8 @@
                         <td><%= resultSet.getString("Start_date") %></td>
                         <td><%= resultSet.getString("Salary") %></td>
                         <td>
-                            <form action="UpdateEmployee.jsp" method="get" class="d-inline">
-                                <input type="hidden" name="id" value="<%= employeeId %>">
-                                <button type="submit" class="btn btn-primary btn-sm">Update</button>
-                            </form>
-                            <form action="DeleteEmployee.jsp" method="post" class="d-inline">
-                                <input type="hidden" name="id" value="<%= employeeId %>">
-                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                            </form>
+                            <a href="deleteEmployee.jsp?ID=<%= resultSet.getString("ID") %>" class="btn btn-danger">Delete</a>
+                            <a href="updateEmployee.jsp?ID=<%= resultSet.getString("ID") %>" class="btn btn-warning">Update</a>
                         </td>
                     </tr>
                     <%
@@ -76,9 +70,9 @@
             </table>
             <%
                 // Menutup koneksi ke DB
-                resultSet.close(); 
-                statement.close(); 
-                connection.close();
+                if (resultSet != null) resultSet.close(); 
+                if (statement != null) statement.close(); 
+                if (connection != null) connection.close();
             } catch(Exception e) {
                 out.println(e.getMessage());
             }       
