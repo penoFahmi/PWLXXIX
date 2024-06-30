@@ -5,11 +5,16 @@
         <group>
             <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/ReadExtras.jsp</file>
             <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/createDimsum.jsp</file>
-            <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/deleteDimsum.jsp</file>
+            <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/createDrinks.jsp</file>
             <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/ReadDrinks.jsp</file>
+            <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/deleteDimsum.jsp</file>
             <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/ReadDimsum.jsp</file>
-            <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/CreateUsers.jsp</file>
+            <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/deleteDrinks.jsp</file>
+            <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/deleteFoods.jsp</file>
+            <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/deleteExtras.jsp</file>
+            <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/createFoods.jsp</file>
             <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/ReadFoods.jsp</file>
+            <file>file:/C:/Users/Peno/Documents/4%20sem/PWLXXIX/web/Mie%20Rantau%20UAS/createExtras.jsp</file>
         </group>
     </open-files>
 </project-private>

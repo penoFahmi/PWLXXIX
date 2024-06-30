@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Delete Dimsum</title>
+        <title>Delete Extras</title>
     </head>
     <body>
         <%

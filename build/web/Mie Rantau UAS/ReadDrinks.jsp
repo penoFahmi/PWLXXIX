@@ -17,8 +17,8 @@
     <body>
         <div class="container">
             <h1 class="mt-4 text-center">Mie Rantau</h1>
-            <h2 class="m-3">Dimsum</h2>
-            <a href="createDimsum.jsp" type="button" class="m-3 btn btn-primary" >Tambah</a>
+            <h2 class="m-3">Minuman</h2>
+            <a href="createDrinks.jsp" type="button" class="m-3 btn btn-primary" >Tambah</a>
             <% Connection connection = null;
                 Statement statement = null;
                 ResultSet resultSet = null;
@@ -31,7 +31,7 @@
                     Class.forName("com.mysql.jdbc.Driver");
                     connection = DriverManager.getConnection(connectionURL, usernameDB, passwordDB);
                     statement = connection.createStatement();
-                    String query = "SELECT * FROM dimsum";
+                    String query = "SELECT * FROM drinks";
                     resultSet = statement.executeQuery(query);
             %>
             <div class="d-flex justify-content-center">
@@ -54,8 +54,8 @@
                                 <td><%= resultSet.getString("photo_url") %></td>
                                 <td>
                                     <div class="d-flex">
-                                        <a href="deleteDimsum.jsp?ID=<%= resultSet.getString("id") %>" class="btn btn-danger">Delete</a>
-                                        <a href="updateDimsum.jsp?ID=<%= resultSet.getString("id") %>" class="btn btn-warning">Update</a>
+                                        <a href="deleteDrinks.jsp?ID=<%= resultSet.getString("id") %>" class="btn btn-danger">Delete</a>
+                                        <a href="updateDrinks.jsp?ID=<%= resultSet.getString("id") %>" class="btn btn-warning">Update</a>
                                     </div>
                                 </td>
                             </tr>
