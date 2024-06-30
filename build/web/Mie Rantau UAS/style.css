@@ -1,0 +1,120 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30 Jun 2024, 21.30.44
+    Author     : Peno
+*/
+
+/* navbar */
+nav {
+  background-color: #9a0303;
+}
+.navbar-nav a {
+  color: #ffffff;
+}
+.container span {
+  color: #ffe110;
+}
+/* akhir navbar */
+
+/* konten 1 */
+#index {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/Capture7.PNG) no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20%;
+}
+.index h1 {
+  color: #ffe110;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+.kontak {
+  font-family: Monserrat;
+}
+.index {
+  font-family: Monserrat;
+  color: #d9d9d9;
+}
+/* footer */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Pacifico&family=Poppins&family=Ubuntu&display=swap");
+footer {
+  font-family: "Lora", serif;
+  background-color: #f46a06;
+}
+.bi svg {
+  color: black;
+}
+.none a {
+  color: black;
+  text-decoration: none;
+}
+.none svg {
+  margin-right: 5px;
+}
+
+/* contact */
+.contact-form {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.contact {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: auto;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border: 1px solid #0056b3;
+}
+
+/* card-menu*/
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
