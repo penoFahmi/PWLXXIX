@@ -21,7 +21,7 @@
             Connection connection = DriverManager.getConnection(connectionURL,
         "root", "");
             Statement statement = connection.createStatement();
-            int i = statement.executeUpdate("DELETE FROM users WHERE ID=" + id +
+            int i = statement.executeUpdate("DELETE FROM dimsum WHERE ID=" + id +
         "");
             response.sendRedirect("ReadDimsum.jsp");
         } catch (Exception e) {

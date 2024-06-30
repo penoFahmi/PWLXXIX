@@ -1,6 +1,6 @@
 <%-- 
-    Document   : deleteDimsum
-    Created on : 30 Jun 2024, 23.12.45
+    Document   : deleteExtras
+    Created on : 1 Jul 2024, 02.41.02
     Author     : Peno
 --%>
 
@@ -21,11 +21,11 @@
             Connection connection = DriverManager.getConnection(connectionURL,
         "root", "");
             Statement statement = connection.createStatement();
-            int i = statement.executeUpdate("DELETE FROM dimsum WHERE ID=" + id +
+            int i = statement.executeUpdate("DELETE FROM extras WHERE ID=" + id +
         "");
-            response.sendRedirect("ReadDimsum.jsp");
+            response.sendRedirect("ReadExtras.jsp");
         } catch (Exception e) {
-            response.sendRedirect("ReadDimsum.jsp");
+            response.sendRedirect("ReadExtras.jsp");
         }
         %>
     </body>

@@ -1,6 +1,6 @@
 <%-- 
-    Document   : deleteDimsum
-    Created on : 30 Jun 2024, 23.12.45
+    Document   : deleteFoods
+    Created on : 1 Jul 2024, 02.41.27
     Author     : Peno
 --%>
 
@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Delete Dimsum</title>
+        <title>Delete Foods</title>
     </head>
     <body>
         <%
@@ -21,11 +21,11 @@
             Connection connection = DriverManager.getConnection(connectionURL,
         "root", "");
             Statement statement = connection.createStatement();
-            int i = statement.executeUpdate("DELETE FROM dimsum WHERE ID=" + id +
+            int i = statement.executeUpdate("DELETE FROM foods WHERE ID=" + id +
         "");
-            response.sendRedirect("ReadDimsum.jsp");
+            response.sendRedirect("ReadFoods.jsp");
         } catch (Exception e) {
-            response.sendRedirect("ReadDimsum.jsp");
+            response.sendRedirect("ReadFoods.jsp");
         }
         %>
     </body>
