@@ -1,16 +1,13 @@
-<%-- 
-    Document   : contact
-    Created on : 24 Jun 2024, 18.22.35
-    Author     : Peno
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact</title>
+    <title>About</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -53,125 +50,177 @@
       </div>
     </nav>
     <!-- Akhir Navbar -->
+    <div class="kontak">
+      <h1 class="pt-5 text-center">Tentang Kami</h1>
+      <!-- Konten 1 -->
+      <section class="mt-5 container bg-body-secondary shadow-lg">
+        <div class="container">
+          <div class="row gx-5">
+            <div class="col-lg-4 align-self-center">
+              <div class="p-3">
+                <img class="img-fluid rounded" src="img/about.PNG" alt="logo" />
+              </div>
+            </div>
+            <div class="col-lg-8 align-self-center">
+              <div class="p-3">
+                <h1 class="display-7 text-center">SEJARAH</h1>
+                <p class="lead">
+                  Mie Rantau adalah kisah keberanian dan inovasi. Dimulai
+                  sebagai impian Muhammad Hasan dalam program MBKM
+                  Kewirausahaan. Awalnya, Kami mencari produk yang diminati oleh
+                  banyak orang. Dengan ini kami memutuskan untuk menjual mie.
+                  Meskipun awalnya Kami ingin mengikuti konsep seperti Warmindo,
+                  kemudian memutuskan untuk menciptakan konsep uniknya sendiri
+                  dengan terinspirasi oleh Mie Gacoan. Kami mencoba resep mie
+                  dan membagikannya kepada teman-temannya. Respon yang positif
+                  dari teman-teman mendorongnya untuk membuka usaha mie dengan
+                  modal terbatas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Konten 1 -->
 
-    <section class="container contact shadow-lg mx-auto m-5 kontak">
-      <h3 class="pt-5 text-center">Kontak Kami</h3>
-      <div class="container px-4 text-center mx-auto mb-5">
-        <div class="row gx-5 bg-contact">
-          <div class="col-lg-6 p-5">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d895.5013366286449!2d109.35444375065816!3d-0.04880051974784719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d5997b1933dc1%3A0x84efd1931075e301!2sMie%20Rantau!5e0!3m2!1sid!2sid!4v1703146572477!5m2!1sid!2sid"
-              style="border: 0"
-              class="shadow-lg"
-              width="100%"
-              height="378px"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div class="col-lg-6 align-self-center">
-            <ul class="text-start list-unstyled">
-              <li class="m-3">
-                <a href="https://maps.app.goo.gl/gSD2YKpSEyzPb8Lw9"
-                  ><i class="bi bi-geo-alt-fill"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-geo-alt-fill"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
-                      /></svg
-                    >Jalan Daya Nasional, Galeri CEBC</i
-                  ></a
-                >
-              </li>
-              <li class="m-3">
-                <a href="whatsapp://send?text=Hello&phone=+6285654486849"
-                  ><i class="bi bi-telephone-fill"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-telephone-fill"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-                      /></svg
-                    >(+62) 856-5448-6849</i
-                  ></a
-                >
-              </li>
-              <li class="m-3">
-                <a href="mailto:mierantauofficial@gmail.com"
-                  ><i class="bi bi-envelope-fill"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-envelope-fill"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
-                      /></svg
-                    >mierantauofficial</i
-                  ></a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="text-start container mt-5 contact-form shadow-lg">
-          <h2 class="text-center">Pesan</h2>
-          <form action="handle_form.php" method="post">
-            <div class="mb-3">
-              <label for="fullName" class="form-label">Nama</label>
-              <input
-                type="text"
-                class="form-control shadow-lg"
-                id="fullName"
-                placeholder="Enter your name"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control shadow-lg"
-                id="email"
-                placeholder="name@example.com"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                class="form-control shadow-lg"
-                id="message"
-                rows="4"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary shadow-lg">
-              Kirim
-            </button>
-          </form>
-        </div>
+      <!-- Gambar Logo Tengah -->
+      <div class="text-center mt-4 container">
+        <img
+          style="width: 139px; height: 138px"
+          class="img-fluid rounded-circle shadow-lg"
+          src="img/logo.png"
+          alt="logo"
+        />
       </div>
-    </section>
+
+      <!-- Konten 2 -->
+      <section class="container mt-5 bg-body-secondary shadow-lg">
+        <div class="container">
+          <div class="row gx-5">
+            <div class="col-lg-8 align-self-center">
+              <div class="p-3">
+                <h1 class="display-7 text-center">VISI</h1>
+                <p class="text-center lead">
+                  Visi Mie Rantau adalah memiliki 10 outlet pada tahun 2024,
+                  menunjukkan ambisi untuk berkembang dan menghadirkan produk
+                  mereka ke lebih banyak pelanggan.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 align-self-center text-center">
+              <div class="text-center p-3">
+                <img
+                  style="width: 136px; height: 257px"
+                  class="p-2 img-fluid"
+                  src="img/about2.PNG"
+                  alt="logo"
+                />
+                <img
+                  style="width: 136px; height: 257px"
+                  class="p-2 img-fluid"
+                  src="img/about3.PNG"
+                  alt="logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Konten 2 -->
+
+      <!-- Konten 3 -->
+      <section class="mt-5">
+        <div class="container">
+          <div class="row gx-5">
+            <div class="col-lg-4 align-self-center text-center">
+              <div class="p-3">
+                <img
+                  style="width: 164px; height: 295px"
+                  class="img-fluid"
+                  src="img/about4.PNG"
+                  alt="logo"
+                />
+              </div>
+            </div>
+            <div class="col-lg-8 align-self-center">
+              <div class="p-3">
+                <h1 class="display-7 text-center">MISI</h1>
+                <p class="text-center lead">
+                  Misi Mie Rantau adalah membuka kemitraan yang saling
+                  menguntungkan dan menjaga profesionalitas dalam bekerja. Ini
+                  menunjukkan komitmen mereka untuk membangun hubungan yang baik
+                  dengan mitra bisnis dan memberikan layanan yang konsisten
+                  kepada pelanggan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Konten 3 -->
+
+      <!-- Konten 4 -->
+      <aside class="p-5 container bg-body-secondary shadow-lg pb-5 mb-5">
+        <h1 class="text-center pb-4">Galeri</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img
+              src="img/about4.PNG"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="1"
+            />
+
+            <img
+              src="img/Capture1.PNG"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="2"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-5 mb-lg-0 align-self-center">
+            <img
+              src="img/Capture4.PNG"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="3"
+            />
+
+            <video
+              src="video/video.mp4"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="3"
+              controls
+              autoplay
+              loop
+            ></video>
+
+            <img
+              src="img/Capture2.PNG"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="4"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="img/Capture5.PNG"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="5"
+            />
+
+            <img
+              src="img/about3.PNG"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="6"
+            />
+          </div>
+        </div>
+        <!-- Gallery -->
+      </aside>
+      <!-- Akhir Konten 4 -->
+    </div>
 
     <!-- Footer -->
-    <footer class="w-100 py-4 flex-shrink-0 shadow-lg">
+    <footer class="w-100 py-4 flex-shrink-0">
       <div class="container py-4">
         <div class="row gy-4 gx-5">
           <div class="col-lg-4 col-md-6 none">

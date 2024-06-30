@@ -1,16 +1,13 @@
-<%-- 
-    Document   : about
-    Created on : 24 Jun 2024, 18.21.47
-    Author     : Peno
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About</title>
+    <title>Home</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -53,175 +50,73 @@
       </div>
     </nav>
     <!-- Akhir Navbar -->
-    <div class="kontak">
-      <h1 class="pt-5 text-center">Tentang Kami</h1>
-      <!-- Konten 1 -->
-      <section class="mt-5 container bg-body-secondary shadow-lg">
-        <div class="container">
-          <div class="row gx-5">
-            <div class="col-lg-4 align-self-center">
-              <div class="p-3">
-                <img class="img-fluid rounded" src="img/about.PNG" alt="logo" />
-              </div>
-            </div>
-            <div class="col-lg-8 align-self-center">
-              <div class="p-3">
-                <h1 class="display-7 text-center">SEJARAH</h1>
-                <p class="lead">
-                  Mie Rantau adalah kisah keberanian dan inovasi. Dimulai
-                  sebagai impian Muhammad Hasan dalam program MBKM
-                  Kewirausahaan. Awalnya, Kami mencari produk yang diminati oleh
-                  banyak orang. Dengan ini kami memutuskan untuk menjual mie.
-                  Meskipun awalnya Kami ingin mengikuti konsep seperti Warmindo,
-                  kemudian memutuskan untuk menciptakan konsep uniknya sendiri
-                  dengan terinspirasi oleh Mie Gacoan. Kami mencoba resep mie
-                  dan membagikannya kepada teman-temannya. Respon yang positif
-                  dari teman-teman mendorongnya untuk membuka usaha mie dengan
-                  modal terbatas.
-                </p>
-              </div>
+
+    <!-- Konten 1 -->
+    <section class="py-4" id="index">
+      <div class="container index">
+        <div class="row gx-5">
+          <div class="col-sm-6 col-md-8">
+            <div class="text-start p-3">
+              <h1 class="display-4">
+                mie pedas paling nikmat!!! <br />
+                MIE RANTAU
+              </h1>
+              <p class="lead">
+                Selamat datang di dunia rasa yang tak terlupakan. Mie Rantau
+                menghadirkan hidangan mie yang luar biasa untuk Anda. Kami
+                adalah pilihan terbaik bagi pecinta mie yang mencari pengalaman
+                kuliner yang unik dan istimewa.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Akhir Konten 1 -->
-
-      <!-- Gambar Logo Tengah -->
-      <div class="text-center mt-4 container">
-        <img
-          style="width: 139px; height: 138px"
-          class="img-fluid rounded-circle shadow-lg"
-          src="img/logo.png"
-          alt="logo"
-        />
       </div>
+    </section>
+    <!-- Akhir Konten 1 -->
 
-      <!-- Konten 2 -->
-      <section class="container mt-5 bg-body-secondary shadow-lg">
-        <div class="container">
-          <div class="row gx-5">
-            <div class="col-lg-8 align-self-center">
-              <div class="p-3">
-                <h1 class="display-7 text-center">VISI</h1>
-                <p class="text-center lead">
-                  Visi Mie Rantau adalah memiliki 10 outlet pada tahun 2024,
-                  menunjukkan ambisi untuk berkembang dan menghadirkan produk
-                  mereka ke lebih banyak pelanggan.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 align-self-center text-center">
-              <div class="text-center p-3">
-                <img
-                  style="width: 136px; height: 257px"
-                  class="p-2 img-fluid"
-                  src="img/about2.PNG"
-                  alt="logo"
-                />
-                <img
-                  style="width: 136px; height: 257px"
-                  class="p-2 img-fluid"
-                  src="img/about3.PNG"
-                  alt="logo"
-                />
+    <!-- Konten 2 -->
+    <aside class="container bg-body-secondary shadow-lg mb-5 p-5 mt-5">
+      <h1 class="text-center">Produk</h1>
+      <div class="container px-4 text-center">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-md-4">
+            <div class="p-3">
+              <div class="card">
+                <img src="img/icon.png" class="card-img-top" alt="product1" />
+                <div class="card-body">
+                  <p class="card-text">Makanan.</p>
+                  <a href="menu.html">view more...</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Akhir Konten 2 -->
-
-      <!-- Konten 3 -->
-      <section class="mt-5">
-        <div class="container">
-          <div class="row gx-5">
-            <div class="col-lg-4 align-self-center text-center">
-              <div class="p-3">
-                <img
-                  style="width: 164px; height: 295px"
-                  class="img-fluid"
-                  src="img/about4.PNG"
-                  alt="logo"
-                />
+          <div class="col-md-4">
+            <div class="p-3">
+              <div class="card">
+                <img src="img/icon2.jpg" class="card-img-top" alt="product2" />
+                <div class="card-body">
+                  <p class="card-text">Minuman.</p>
+                  <a href="menu.html">view more...</a>
+                </div>
               </div>
             </div>
-            <div class="col-lg-8 align-self-center">
-              <div class="p-3">
-                <h1 class="display-7 text-center">MISI</h1>
-                <p class="text-center lead">
-                  Misi Mie Rantau adalah membuka kemitraan yang saling
-                  menguntungkan dan menjaga profesionalitas dalam bekerja. Ini
-                  menunjukkan komitmen mereka untuk membangun hubungan yang baik
-                  dengan mitra bisnis dan memberikan layanan yang konsisten
-                  kepada pelanggan.
-                </p>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3">
+              <div class="card">
+                <img src="img/icon3.webp" class="card-img-top" alt="product3" />
+                <div class="card-body">
+                  <p class="card-text">Extra.</p>
+                  <a href="menu.html">view more...</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Akhir Konten 3 -->
-
-      <!-- Konten 4 -->
-      <aside class="p-5 container bg-body-secondary shadow-lg pb-5 mb-5">
-        <h1 class="text-center pb-4">Galeri</h1>
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <img
-              src="img/about4.PNG"
-              class="w-100 shadow-1-strong rounded mb-4"
-              alt="1"
-            />
-
-            <img
-              src="img/Capture1.PNG"
-              class="w-100 shadow-1-strong rounded mb-4"
-              alt="2"
-            />
-          </div>
-
-          <div class="col-lg-4 mb-5 mb-lg-0 align-self-center">
-            <img
-              src="img/Capture4.PNG"
-              class="w-100 shadow-1-strong rounded mb-4"
-              alt="3"
-            />
-
-            <video
-              src="video/video.mp4"
-              class="w-100 shadow-1-strong rounded mb-4"
-              alt="3"
-              controls
-              autoplay
-              loop
-            ></video>
-
-            <img
-              src="img/Capture2.PNG"
-              class="w-100 shadow-1-strong rounded mb-4"
-              alt="4"
-            />
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <img
-              src="img/Capture5.PNG"
-              class="w-100 shadow-1-strong rounded mb-4"
-              alt="5"
-            />
-
-            <img
-              src="img/about3.PNG"
-              class="w-100 shadow-1-strong rounded mb-4"
-              alt="6"
-            />
-          </div>
-        </div>
-        <!-- Gallery -->
-      </aside>
-      <!-- Akhir Konten 4 -->
-    </div>
-
+      </div>
+    </aside>
+    <!-- Akhir Konten 2 -->
+    <audio autoplay loop src="audio/"></audio>
     <!-- Footer -->
     <footer class="w-100 py-4 flex-shrink-0">
       <div class="container py-4">
@@ -356,4 +251,3 @@
     ></script>
   </body>
 </html>
-

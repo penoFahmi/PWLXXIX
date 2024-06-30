@@ -1,16 +1,14 @@
-<%-- 
-    Document   : index
-    Created on : 24 Jun 2024, 18.22.58
-    Author     : Peno
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home</title>
+    <title>Contact</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -54,74 +52,124 @@
     </nav>
     <!-- Akhir Navbar -->
 
-    <!-- Konten 1 -->
-    <section class="py-4" id="index">
-      <div class="container index">
-        <div class="row gx-5">
-          <div class="col-sm-6 col-md-8">
-            <div class="text-start p-3">
-              <h1 class="display-4">
-                mie pedas paling nikmat!!! <br />
-                MIE RANTAU
-              </h1>
-              <p class="lead">
-                Selamat datang di dunia rasa yang tak terlupakan. Mie Rantau
-                menghadirkan hidangan mie yang luar biasa untuk Anda. Kami
-                adalah pilihan terbaik bagi pecinta mie yang mencari pengalaman
-                kuliner yang unik dan istimewa.
-              </p>
-            </div>
+    <section class="container contact shadow-lg mx-auto m-5 kontak">
+      <h3 class="pt-5 text-center">Kontak Kami</h3>
+      <div class="container px-4 text-center mx-auto mb-5">
+        <div class="row gx-5 bg-contact">
+          <div class="col-lg-6 p-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d895.5013366286449!2d109.35444375065816!3d-0.04880051974784719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d5997b1933dc1%3A0x84efd1931075e301!2sMie%20Rantau!5e0!3m2!1sid!2sid!4v1703146572477!5m2!1sid!2sid"
+              style="border: 0"
+              class="shadow-lg"
+              width="100%"
+              height="378px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
+          <div class="col-lg-6 align-self-center">
+            <ul class="text-start list-unstyled">
+              <li class="m-3">
+                <a href="https://maps.app.goo.gl/gSD2YKpSEyzPb8Lw9"
+                  ><i class="bi bi-geo-alt-fill"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-geo-alt-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                      /></svg
+                    >Jalan Daya Nasional, Galeri CEBC</i
+                  ></a
+                >
+              </li>
+              <li class="m-3">
+                <a href="whatsapp://send?text=Hello&phone=+6285654486849"
+                  ><i class="bi bi-telephone-fill"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telephone-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                      /></svg
+                    >(+62) 856-5448-6849</i
+                  ></a
+                >
+              </li>
+              <li class="m-3">
+                <a href="mailto:mierantauofficial@gmail.com"
+                  ><i class="bi bi-envelope-fill"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-envelope-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                      /></svg
+                    >mierantauofficial</i
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-start container mt-5 contact-form shadow-lg">
+          <h2 class="text-center">Pesan</h2>
+          <form action="handle_form.php" method="post">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Nama</label>
+              <input
+                type="text"
+                class="form-control shadow-lg"
+                id="fullName"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control shadow-lg"
+                id="email"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control shadow-lg"
+                id="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary shadow-lg">
+              Kirim
+            </button>
+          </form>
         </div>
       </div>
     </section>
-    <!-- Akhir Konten 1 -->
 
-    <!-- Konten 2 -->
-    <aside class="container bg-body-secondary shadow-lg mb-5 p-5 mt-5">
-      <h1 class="text-center">Produk</h1>
-      <div class="container px-4 text-center">
-        <div class="row gx-5 justify-content-center">
-          <div class="col-md-4">
-            <div class="p-3">
-              <div class="card">
-                <img src="img/icon.png" class="card-img-top" alt="product1" />
-                <div class="card-body">
-                  <p class="card-text">Makanan.</p>
-                  <a href="menu.html">view more...</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="p-3">
-              <div class="card">
-                <img src="img/icon2.jpg" class="card-img-top" alt="product2" />
-                <div class="card-body">
-                  <p class="card-text">Minuman.</p>
-                  <a href="menu.html">view more...</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="p-3">
-              <div class="card">
-                <img src="img/icon3.webp" class="card-img-top" alt="product3" />
-                <div class="card-body">
-                  <p class="card-text">Extra.</p>
-                  <a href="menu.html">view more...</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </aside>
-    <!-- Akhir Konten 2 -->
-    <audio autoplay loop src="audio/"></audio>
     <!-- Footer -->
-    <footer class="w-100 py-4 flex-shrink-0">
+    <footer class="w-100 py-4 flex-shrink-0 shadow-lg">
       <div class="container py-4">
         <div class="row gy-4 gx-5">
           <div class="col-lg-4 col-md-6 none">
@@ -254,4 +302,3 @@
     ></script>
   </body>
 </html>
-
