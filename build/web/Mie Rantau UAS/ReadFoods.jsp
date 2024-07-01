@@ -17,7 +17,7 @@
     <body>
         <div class="container">
             <h1 class="mt-4 text-center">Mie Rantau</h1>
-            <h2 class="m-3">Dimsum</h2>
+            <h2 class="m-3">Aneka Mie Rantau</h2>
             <a href="createFoods.jsp" type="button" class="m-3 btn btn-primary" >Tambah</a>
             <% Connection connection = null;
                 Statement statement = null;
