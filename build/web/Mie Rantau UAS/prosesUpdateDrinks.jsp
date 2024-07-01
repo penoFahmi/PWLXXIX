@@ -34,9 +34,9 @@
 
                     int i = statement.executeUpdate();
                     if (i > 0) {
-                        response.sendRedirect("ReadDimsum.jsp");
+                        response.sendRedirect("ReadDriks.jsp");
                     } else {
-                        out.println("Failed to update dimsum.");
+                        out.println("Failed to update drinks.");
                     }
                 } catch(Exception e) {
                     out.println("Error: " + e.getMessage());
