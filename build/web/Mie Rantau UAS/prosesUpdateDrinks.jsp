@@ -34,7 +34,7 @@
 
                     int i = statement.executeUpdate();
                     if (i > 0) {
-                        response.sendRedirect("ReadDriks.jsp");
+                        response.sendRedirect("ReadDrinks.jsp");
                     } else {
                         out.println("Failed to update drinks.");
                     }
